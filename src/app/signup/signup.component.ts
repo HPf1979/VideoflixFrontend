@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { AbstractControl, FormControl, FormGroup, ValidationErrors, ValidatorFn, Validators } from '@angular/forms'; 
 import { AuthServiceService } from '../auth-service.service';
+import { Router } from '@angular/router';
+
 
 
 export function passwordsMatchValidators(): ValidatorFn {
@@ -27,7 +29,7 @@ export class SignUpComponent implements OnInit {
   [x: string]: any;
  signUpForm!: FormGroup; // Verwendung von FormGroup
 
-  constructor(private authService: AuthServiceService) {} // Injizieren des AuthService
+  constructor(private authService: AuthServiceService, private router: Router) {} // Injizieren des AuthService
 
   ngOnInit(): void {
     // Initialisieren Sie das FormGroup und die FormControl-Instanzen
@@ -79,12 +81,9 @@ export class SignUpComponent implements OnInit {
 
     this.authService.sendEmailConfirmation(email).subscribe(() => {
       // Erfolgreiches Senden der Bestätigungsemail
-      // Fahren Sie fort, um die Benutzerdaten an das Backend zu senden, wenn die E-Mail bestätigt ist
-      // Implementieren Sie hier die Logik, um die Benutzerdaten an das Backend zu senden
-      // Erfolgreiches Senden der Bestätigungsemail
-      // Fahren Sie fort, um die Benutzerdaten an das Backend zu senden, wenn die E-Mail bestätigt ist
-      // Implementieren Sie hier die Logik, um die Benutzerdaten an das Backend zu senden
-      this['router'].navigate(['/email-confirmation']); 
+      // Fahrfort, um die Benutzerdaten an das Backend zu senden, wenn die E-Mail bestätigt ist
+      // Implementier hier die Logik, um die Benutzerdaten an das Backend zu senden
+      this.router.navigate(['./email-confirmation']); 
     });
   }
 }
