@@ -1,0 +1,44 @@
+/* CSS-Styling für die Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+}
+
+/* CSS-Styling für das Logo */
+.logo {
+    width: 50%;
+    max-width: 200px;
+    /* Maximalbreite für das Logo */
+}
+
+.navbar-button {
+    width: 100px;
+}
+
+/* CSS-Styling für den Anmelde-Button */
+.sign-in-button {
+    background-color: #e50914;
+    /* Hintergrundfarbe */
+    padding: 0.5rem 0.5rem;
+    /* Innenabstand */
+    color: #fff;
+    /* Textfarbe */
+    font-size: 1rem;
+    /* Schriftgröße */
+    border: none;
+    /* Keine Rahmen */
+    border-radius: 0.25rem;
+    /* Abrundung der Ecken */
+    cursor: pointer;
+    /* Zeiger beim Hovern */
+}
+
+.sign-in-button:hover {
+    background-color: #ff0f24;
+    /* Hintergrundfarbe beim Hover */
+}
