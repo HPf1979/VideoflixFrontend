@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+/* import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({
@@ -12,4 +12,4 @@ export class PublicService {
   getMessage() {
     return this.http.get(this.api_url)
   }
-}
+} */

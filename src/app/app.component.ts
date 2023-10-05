@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {PublicService} from './services/public.service'
+/* import {PublicService} from './services/public.service' */
 
 @Component({
   selector: 'app-root',
@@ -10,16 +10,16 @@ export class AppComponent {
   title = 'VideoflixFrontend';
   msg: any;
 
-  constructor(public pService: PublicService){
+  constructor(){
   }
   ngOnInit(): void {
-  this.showMessage();
+/*   this.showMessage(); */
   }
 
-  showMessage(){
+/*   showMessage(){
     this.pService.getMessage().subscribe(data => {
       this.msg = data,
         console.log(this.msg);
   });
-}
+} */
 }

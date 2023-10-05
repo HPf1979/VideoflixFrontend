@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EmailConformationComponent } from './email-conformation.component';
+import { EmailConformationComponent } from './emailConformation.component';
 
 describe('EmailConformationComponent', () => {
   let component: EmailConformationComponent;
