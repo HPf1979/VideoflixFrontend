@@ -13,6 +13,8 @@ import { MatInputModule } from '@angular/material/input';
 import { EmailConformationComponent } from './emailConformation/emailConformation.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './login/login.component';
+import { MovieListComponent } from './movie-list/movie-list.component';
+import { MoreInfoComponent } from './more-info/more-info.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { LoginComponent } from './login/login.component';
     SignUpComponent,
     HeaderComponent,
     EmailConformationComponent,
-    LoginComponent
+    LoginComponent,
+    MovieListComponent,
+    MoreInfoComponent
   ],
   imports: [
     BrowserModule,
