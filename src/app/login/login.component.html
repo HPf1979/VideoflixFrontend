@@ -1,13 +1,11 @@
-<!-- signup.component.html -->
 <app-header></app-header>
 <div class="cover">
 <div class="overlay-bg"> 
- <div class="header-content">  
+  <div class="header-content">  
   <div class="content-overlay">  
   <div class="mat-elevation-z5">
-  <h1>Sign Up a New User!</h1>
-  <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
-  
+  <h1>Log In</h1>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
 
     <mat-form-field>
       <input matInput placeholder="Email adress" formControlName="email" />
@@ -30,37 +28,21 @@
       >
     </mat-form-field>
 
-    <mat-form-field>
-      <input
-        matInput
-        placeholder="Confirm Password"
-        formControlName="confirmPassword"
-        type="password"
-      />
-      <mat-error *ngIf="confirmPassword?.errors?.['required']"
-        >Confirm Password is required</mat-error
-      >
-    </mat-form-field>
-
-    <mat-error *ngIf="signUpForm.errors?.['passwordsDontMatch']"
-      >Passwords should match</mat-error
-    >
-
     <div class="center">
-      <button mat-raised-button color="warn" type="submit">Sign Up</button>
-     <!--  <a href ="/emailConfirmation"></a> -->
+      <button mat-raised-button color="warn" type="submit">Log in</button>
     </div>
+
   </form>
    <div class="center padding-top-16">
-     <span> Have an account already? </span>
-      <a routerLink="/login" class="link">
-              Login
+     <span> Do not have account</span>
+      <a routerLink="/signup" class="link">
+              Sign Up
       </a>
     </div>
 </div>
 
 </div> 
  </div> 
- </div>  
+ </div> 
 </div>
 

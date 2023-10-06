@@ -8,6 +8,10 @@ body {
     font-family: sans-serif
 }
 
+h1 {
+    color: white
+}
+
 /* signup.component.css */
 /* Header-Styling */
 .cover {
@@ -115,5 +119,13 @@ body {
 .link {
     color: #06f;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

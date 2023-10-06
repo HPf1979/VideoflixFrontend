@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AbstractControl, FormControl, FormGroup, ValidationErrors, ValidatorFn, Validators } from '@angular/forms'; 
 import { Router } from '@angular/router';
 import { AuthServiceService } from '../auth-service.service';
-import { catchError, throwError } from 'rxjs';
+import { catchError, throwError, Observable } from 'rxjs';
 
 export function passwordsMatchValidators(): ValidatorFn {
   return (control: AbstractControl): ValidationErrors | null => {
@@ -56,10 +56,10 @@ export class SignUpComponent implements OnInit {
 
 onSubmit() {
   if (this.signUpForm.valid) {
-    
+         
     const userData = this.signUpForm.getRawValue(); // Benutzerdaten aus dem Formular
 
-    this.authService.registerUser(userData)
+        this.authService.registerUser(userData)
       .pipe(
         catchError((_error: any) => {
           // Fehlerbehandlung hier, z.B. Anzeigen einer Fehlermeldung
@@ -67,15 +67,27 @@ onSubmit() {
         })
       )
       .subscribe(() => {
-        // Erfolgreiche Registrierung, hier können Sie zur Bestätigungsseite navigieren
-        this.router.navigate(['/emailConfirmation'])
-      });
-  }
-}
-
+        // Erfolgreiche Registrierung, hier zur Bestätigungsseite navigieren
+        this.router.navigate(['/emailConformation'])
+      }); 
+   }
 } 
 
 
+   /*  this.authService.registerUser(userData)
+      .pipe(
+        catchError((_error: any) => {
+          // Fehlerbehandlung hier, z.B. Anzeigen einer Fehlermeldung
+          return throwError(() => new Error('Fehler bei der Registrierung'));;
+        })
+      )
+      .subscribe(() => {
+        // Erfolgreiche Registrierung, hier zur Bestätigungsseite navigieren
+        this.router.navigate(['/emailConformation'])
+      }); */
+
+
+}
  /*  signUpForm = new FormGroup(
     {
       email: new FormControl('', [Validators.required, Validators.email]),

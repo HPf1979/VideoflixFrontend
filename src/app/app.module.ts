@@ -12,13 +12,15 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { EmailConformationComponent } from './emailConformation/emailConformation.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignUpComponent,
     HeaderComponent,
-    EmailConformationComponent
+    EmailConformationComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

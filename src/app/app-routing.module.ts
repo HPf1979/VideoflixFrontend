@@ -2,17 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { SignUpComponent } from './signup/signup.component';
 import { EmailConformationComponent } from './emailConformation/emailConformation.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
+  { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignUpComponent },
- /*   {
-    path: 'emailConfirmation',
-    loadChildren: () =>
-      import('./path-to-your-email-confirmation-module/email-confirmation.module').then(
-        (m) => m.EmailConfirmationModule
-      ),
-  }, */
- { path: 'emailConformation', component: EmailConformationComponent}, 
+  { path: 'emailConformation', component: EmailConformationComponent},  
 ];
 
 @NgModule({
