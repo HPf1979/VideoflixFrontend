@@ -17,5 +17,12 @@ export class AuthServiceService {
   registerUser(userData: any): Observable<any> {
     return this.http.post<any>('http://localhost:8000/api/signup/', userData);
   }
+
+  login(email: string, password: string): Observable<any> {
+    const credentials = { email, password };
+
+    return this.http.post<any>('http://localhost:8000/api/login/', credentials);
+  }
+
 }
 

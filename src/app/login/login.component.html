@@ -5,7 +5,7 @@
   <div class="content-overlay">  
   <div class="mat-elevation-z5">
   <h1>Log In</h1>
-  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <form [formGroup]="loginForm" (ngSubmit)="login()">
 
     <mat-form-field>
       <input matInput placeholder="Email adress" formControlName="email" />

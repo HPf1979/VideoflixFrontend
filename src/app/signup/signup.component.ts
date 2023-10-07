@@ -54,7 +54,7 @@ export class SignUpComponent implements OnInit {
   }
 
 
-onSubmit() {
+signUp() {
   if (this.signUpForm.valid) {
          
     const userData = this.signUpForm.getRawValue(); // Benutzerdaten aus dem Formular
