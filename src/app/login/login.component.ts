@@ -14,6 +14,7 @@ export class LoginComponent implements OnInit {
     email: new FormControl('', [Validators.required, Validators.email]),
     password: new FormControl('', [Validators.required]),
   });
+  errorMessage: string | undefined;
 
   constructor(
     private router: Router, private authService: AuthServiceService 
@@ -43,7 +44,7 @@ export class LoginComponent implements OnInit {
      .login(email, password)
      .pipe(
       catchError((_error: any) => {
-        // Fehlerbehandlung hier, z.B. Anzeigen einer Fehlermeldung
+        this.errorMessage = 'Login Fehlermeldung gespeichert'; // Fehlermeldung speichern
         return throwError(() => new Error('Login fehlgeschlagen'));
       })
     )
