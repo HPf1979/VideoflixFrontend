@@ -1,0 +1,16 @@
+ <div class="main-content">
+    <div class="navbar-movie-list">
+    <div class="navbar-logo">
+    <img src="assets/netflix.png" alt="logo">
+    </div>
+    <div class="navbar-button">
+    <button class="logout-button" routerLink="/">Log out</button>
+    </div>
+    </div>
+
+    <main class='video-container '>
+    
+        <video *ngIf="selectedVideo" [src]="selectedVideo" controls class="w-full h-screen player"></video>
+                
+    </main>
+</div>

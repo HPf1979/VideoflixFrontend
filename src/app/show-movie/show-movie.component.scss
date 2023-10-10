@@ -1,0 +1,71 @@
+/* Navigation */
+.navbar-movie-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+}
+
+.navbar-logo {
+    width: 90%;
+    max-width: 300px;
+}
+
+.navbar-logo img {
+    width: 40%;
+}
+
+.navbar-button {
+    width: 120px;
+}
+
+.logout-button {
+    background-color: #e50914;
+    /* Hintergrundfarbe */
+    padding: 0.5rem 0.5rem;
+    /* Innenabstand */
+    color: #fff;
+    /* Textfarbe */
+    font-size: 1rem;
+    /* Schriftgröße */
+    border: none;
+    /* Keine Rahmen */
+    border-radius: 0.25rem;
+    /* Abrundung der Ecken */
+    cursor: pointer;
+    border: 2px solid transparent;
+    /*  padding: 10px 20px; */
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.logout-button:hover {
+    border: 2px solid white;
+}
+
+/* Hauptinhalt */
+.main-content {
+    background-color: #000;
+    min-height: 100vh;
+    color: #fff;
+    overflow: auto;
+    height: 100vh;
+}
+
+.video-container {
+    background-color: #000;
+    /* Hier die gewünschte Hintergrundfarbe setzen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* 100% der Bildschirmhöhe einnehmen */
+}
+
+.player {
+    width: 100vw;
+    height: 80vh;
+}

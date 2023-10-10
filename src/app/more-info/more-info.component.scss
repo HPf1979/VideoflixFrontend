@@ -62,14 +62,13 @@
 
 /* Abschnitt 1 */
 /* section1.css */
-.section-container {
+.container-more-info {
     height: 100vh;
     position: relative;
     background-repeat: no-repeat;
     padding-bottom: 8px;
     padding-left: 6px;
     display: flex;
-    justify-content: flex-end;
     align-items: flex-end;
     background-size: cover;
     background-image: url('/assets/vikings.jpg');

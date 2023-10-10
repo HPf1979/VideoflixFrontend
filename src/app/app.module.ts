@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './login/login.component';
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { MoreInfoComponent } from './more-info/more-info.component';
+import { ShowMovieComponent } from './show-movie/show-movie.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { MoreInfoComponent } from './more-info/more-info.component';
     EmailConformationComponent,
     LoginComponent,
     MovieListComponent,
-    MoreInfoComponent
+    MoreInfoComponent,
+    ShowMovieComponent
   ],
   imports: [
     BrowserModule,

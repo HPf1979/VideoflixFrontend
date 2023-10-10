@@ -5,6 +5,7 @@ import { EmailConformationComponent } from './emailConformation/emailConformatio
 import { LoginComponent } from './login/login.component';
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { MoreInfoComponent } from './more-info/more-info.component';
+import { ShowMovieComponent } from './show-movie/show-movie.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -12,7 +13,9 @@ const routes: Routes = [
   { path: 'emailConformation', component: EmailConformationComponent},  
   { path: 'movie-list', component: MovieListComponent},  
   { path: 'more-info', component: MoreInfoComponent},  
-  { path: '', redirectTo: '/login', pathMatch: 'full' }
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: 'videos', component: MovieListComponent },
+  { path: 'show-movie', component: ShowMovieComponent },
 ];
 
 @NgModule({
