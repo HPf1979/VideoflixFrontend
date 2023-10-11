@@ -67,6 +67,7 @@
     align-items: flex-end;
     background-size: cover;
     background-image: url('/assets/vikings.jpg');
+    background-position: center;
 }
 
 .section-title {
@@ -159,7 +160,7 @@
 .movie-item {
     width: 200px;
     height: 300px;
-    margin: 10px;
+    margin: 50px;
     background-color: #333;
     border-radius: 5px;
     cursor: pointer;
