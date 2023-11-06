@@ -16,6 +16,9 @@ import { LoginComponent } from './login/login.component';
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { MoreInfoComponent } from './more-info/more-info.component';
 import { ShowMovieComponent } from './show-movie/show-movie.component';
+import { ImpressumComponent } from './impressum/impressum.component';
+import { DataProtectionComponent } from './data-protection/data-protection.component';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { ShowMovieComponent } from './show-movie/show-movie.component';
     LoginComponent,
     MovieListComponent,
     MoreInfoComponent,
-    ShowMovieComponent
+    ShowMovieComponent,
+    ImpressumComponent,
+    DataProtectionComponent,
+   
   ],
   imports: [
     BrowserModule,

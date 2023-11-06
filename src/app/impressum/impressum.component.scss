@@ -1,0 +1,54 @@
+.overlay-impressum {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.impressum-container {
+    position: relative;
+    color: white;
+}
+
+a {
+    color: greenyellow
+}
+
+.go-back {
+    position: absolute;
+    top: 379px;
+    background-color: #e50914;
+    padding: 0.5rem 0.5rem;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+    width: 200px;
+    left: -1px;
+
+    &:hover {
+        filter: brightness(1.2);
+        cursor: pointer;
+    }
+}
+
+.logout-button {
+    background-color: #e50914;
+    padding: 0.5rem 0.5rem;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+}
