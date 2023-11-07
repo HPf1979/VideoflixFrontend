@@ -20,6 +20,7 @@ const routes: Routes = [
   { path: 'show-movie', component: ShowMovieComponent },
   { path: 'impressum', component: ImpressumComponent },
    { path: 'data-protection', component: DataProtectionComponent},
+   { path: '**', redirectTo: '/login' }, // Diese Zeile fügt die Wildcard-Route hinzu
 ];
 
 @NgModule({
