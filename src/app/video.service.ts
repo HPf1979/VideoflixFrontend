@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class VideoService {
-  private apiUrl = 'http://herlina-pfeiffer.developerakademie.org/api/video/videos/';
+  private apiUrl = 'https://herlina-pfeiffer.developerakademie.org/api/video/videos/';
 
   constructor(private http: HttpClient) { }
     getVideos(): Observable<any[]> {
