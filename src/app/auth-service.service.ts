@@ -15,14 +15,13 @@ export class AuthServiceService {
   constructor(private http: HttpClient) {}
 
   registerUser(userData: any): Observable<any> {
-    return this.http.post<any>('http://localhost:8000/api/signup/', userData);
+    return this.http.post<any>('https://herlina-pfeiffer.developerakademie.org/api/signup/', userData);
   }
 
   login(email: string, password: string): Observable<any> {
     const credentials = { email, password };
 
-    return this.http.post<any>('http://localhost:8000/api/login/', credentials);
+    return this.http.post<any>('https://herlina-pfeiffer.developerakademie.org/api/login/', credentials);
   }
-
 }
 
